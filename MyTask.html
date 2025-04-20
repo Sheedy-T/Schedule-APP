@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MyTask.css">
+    <title>React App</title>
+    
+</head>
+<body>
+    <nav>
+        <ul>
+           <li>SHEDDY TASK</li>
+          <li class="hero1">INBOX</li>  
+        </ul>
+        <div class="hero2">
+          <div>+</div>
+        </div>
+        <div class="search-box">
+       <img src="/image/searchicon.png" alt="search" class="img1">
+       <input type="search" placeholder="search for todos or tags" class="hero4">     
+        </div>
+    </nav>
+    <div class="hero">
+     <div class="container">
+      <button id="addTaskBtn">Add Task</button>
+      <button class="btn2">Add Section</button>
+      <div class="box first-task">
+       <!-- <div class="left-side">
+        <div class="triangle"></div>
+          <h4 class="object">New Task</h4>
+          </div>
+          <div class="right-side">
+          <img src="image/editicon.png" alt="edit"><img src="image/wasteicon.png" alt="delete" id="delete" class="delete-task">
+          
+        </div>
+       </div>
+       <div class="section-wrapper">
+       <div class="box1">
+        <div class="left-side collapsible-content">
+           <div><img src="image/mark.png" alt="check"></div>
+            <p>Quarterly newsletter</p>            
+        </div>
+        <div class="right-side">
+          <span><button class="color-changing-btn">work</button></span>
+          <span>Today</span>
+          <td class="set"><img src="image/editicon.png" alt="edit">
+        <img src="image/deleteicon2.png" alt="delete" style="height: 15px;width: 14px;" id="delete" class="delete-section"></td>
+   </div>
+        </div>
+        <hr class="divider">
+   
+        <div class="box1">
+        <div class="left-side collapsible-content">
+           <div><img src="image/mark.png" alt="check"></div>
+            <p>Mobile app launch</p>            
+        </div>
+        <div class="right-side">
+          <span><button style="margin-left: -5px;" class="color-changing-btn">Goals</button></span>
+          <span class="section-date" data-raw="2022-05-20">May 20 2022</span>
+
+       <td class="set"><img src="image/editicon.png" alt="edit" style="margin-left: 11px;"><img src="image/deleteicon2.png" alt="delete" style="height: 15px;width:14px;" ></td>
+   </div>
+        </div>
+        <hr class="divider">
+        </div> -->
+        </div>
+
+
+    <div class="trans">Create Your Schedule</div>
+
+      
+        <div class="popup-form" id="popupForm">
+        <div class="form-container">
+          <h3>Add New Task</h3>
+          <input type="text" id="taskName" placeholder="Enter task name" required>
+          <button id="saveTask">Save Task</button>
+          <button id="closeForm">Cancel</button>
+        </div>
+      </div>
+
+      <div class="popup-form" id="popupSectionForm">
+        <div class="form-container">
+          <h3>Add New Section</h3>
+          <input type="text" id="sectionName" placeholder="Enter section name" required>
+          <input type="date" id="sectionDate" required>
+          <input type="text" id="sectionTag" placeholder="Enter tag (will show as button)">
+          <textarea id="sectionDesc" placeholder="Enter description (won't be shown yet)"></textarea>
+      
+          <button id="saveSection">Save Section</button>
+          <button id="closeSectionForm">Cancel</button>
+        </div>
+      </div>
+      
+
+            
+      
+<script src="myTask.js"></script> 
+</body>
+</html>
